@@ -3,11 +3,51 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
 
-<main>
-	{{>heading title="Index" info=data.test}}
-</main>
+<div>
+    <div class="page">
+        <header class="header">
+
+            <div class="header__top">
+                <div class="header__list">
+                    <div class="header__item">Home</div>
+                    <div class="header__item">About</div>
+                    <div class="header__item">Contact</div>
+                </div>
+                <button class="header__icon header__icon--open"></button>
+            </div>
+
+            <div class="header__wrapper">
+                <div class="header__bottom">
+                    <div class="header__list header__list--top">
+                        <div class="header__item">Service</div>
+                        <div class="header__item">Privacy</div>
+                        <div class="header__item">Clients</div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main>
+            <button class="slider__arrow slider__arrow--left">
+                <img src="./svg/arrow-left.svg" alt="">
+            </button>
+            <button class="slider__arrow slider__arrow--right">
+                <img src="./svg/arrow-right.svg" alt="">
+            </button>
+
+            <div class="slider__content">
+                <img src="https://picsum.photos/600/400" alt="" class="slider__image">
+                <img src="https://picsum.photos/600/400" alt="" class="slider__image">
+                <img src="https://picsum.photos/600/400" alt="" class="slider__image">
+            </div>
+
+        </main>
+    </div>
+</div>
 
 {{!
-    Цей код містить лише те, що буде виводитись в <body>
+Цей код містить лише те, що буде виводитись в
+
+<body>
     Адже наш layout/default.hbs має вже структуру HTML
-}}
+    }}
